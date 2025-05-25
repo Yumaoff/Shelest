@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+body {
+	color: $primary-color;
+	font-family: $font-famaly;
+	background-color: $background;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
