@@ -1,4 +1,34 @@
-$primary-color: #191919;
-$background: #fff;
-$secodary-background: #191919;
-$font-famaly: inter, sans-serif;
+//  Цвета
+$primary-font-color: #2d2d2d; // Основной цвет шрифта
+$second-font-color: #d9d9d9; // Используется на тёмном фоне
+$description-font-color: #4d4d4d; // Второй цвет шрифта для описаний
+
+$primary-background: #efefef; // Светлый фон страницы
+$secondary-background: #191919; // Тёмный фон страницы
+
+$accent-color: #bdc94d; // Акцентный цвет
+
+$heading-gradient: linear-gradient(
+	180deg,
+	#056654 0%,
+	#000 100%
+); // Цвет основного заголовка
+
+//  Шрифты
+$font-family: 'Inter', sans-serif; // Основной шрифт
+$title-font-family: 'Polonuim', sans-serif; // Основной заголовок
+$section-title-font-family: 'Unbounded', sans-serif; // Заголовок секции
+
+//  Размеры шрифтов
+$title-font-size-h1: clamp(71px, 20vw, 280px); // Основной заголовок
+$section-title-font-size: clamp(24px, 4.44vw, 64px); // Заголовок секции
+
+$font-size-base: clamp(16px, 1.1vw, 18px); // Основной размер шрифта страницы
+$font-size-header: 16px; // Размер шрифта в шапке страницы
+$font-size-header-menu-mobile: 20px; // Размер шрифта в меню шапки на мобильных устройствах
+$font-size-button: 20px; // Размер шрифта кнопки
+$font-size-hero-description: clamp(20px, 1.3vw, 22px); // Размер описания в hero
+
+//  Границы размеров экрана
+$max-width: 1440px; // Ширина страницы на больших экранах
+$min-width: 360px; // Ширина страницы на мобильных устройствах

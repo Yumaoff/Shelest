@@ -1,9 +1,16 @@
 @use 'variables' as *;
 
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html,
 body {
-	color: $primary-color;
-	font-family: $font-famaly;
-	background-color: $background;
+	scroll-behavior: smooth;
+	color: $primary-font-color;
+	font-family: $font-family;
+	background-color: $primary-background;
 }
 
 a {
@@ -12,4 +19,8 @@ a {
 
 li {
 	list-style-type: none;
+}
+
+.highlight {
+	color: $accent-color;
 }
