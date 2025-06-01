@@ -7,6 +7,7 @@ $primary-background: #efefef; // Светлый фон страницы
 $secondary-background: #191919; // Тёмный фон страницы
 
 $accent-color: #bdc94d; // Акцентный цвет
+$accent-color-alt: #ca9dfc; // Альтернативный акцентный цвет
 
 $heading-gradient: linear-gradient(
 	180deg,
@@ -16,8 +17,8 @@ $heading-gradient: linear-gradient(
 
 //  Шрифты
 $font-family: 'Inter', sans-serif; // Основной шрифт
-$title-font-family: 'Polonuim', sans-serif; // Основной заголовок
-$section-title-font-family: 'Unbounded', sans-serif; // Заголовок секции
+$logo-font-family: 'Polonuim'; // Основной заголовок
+$title-font-family: 'Unbounded'; // Заголовок секции
 
 //  Размеры шрифтов
 $title-font-size-h1: clamp(71px, 20vw, 280px); // Основной заголовок

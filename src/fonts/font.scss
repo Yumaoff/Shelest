@@ -10,11 +10,18 @@
 }
 
 @font-face {
+	font-family: 'Polonium';
+	src: url('../fonts/font-files/Polonium/Polonium-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-display: swap;
+}
+
+// Для Unbounded
+@font-face {
 	font-family: 'Unbounded';
 	src: url('../fonts/font-files/Unbounded/Unbounded-Regular.ttf')
 		format('truetype');
 	font-weight: 400;
-	font-style: normal;
 	font-display: swap;
 }
 
@@ -23,14 +30,5 @@
 	src: url('../fonts/font-files/Unbounded/Unbounded-Bold.ttf')
 		format('truetype');
 	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Polonium';
-	src: url('../fonts/font-files/Polonium/Polonium-Bold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
 	font-display: swap;
 }
