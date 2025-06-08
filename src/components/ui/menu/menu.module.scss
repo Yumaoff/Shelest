@@ -1,0 +1,83 @@
+@import '../../../scss/variables';
+
+.menu {
+	ul {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		margin: 0;
+		list-style: none;
+
+		.separator {
+			color: $header-text;
+			font-size: 20px;
+			user-select: none;
+		}
+	}
+
+	li a {
+		padding: 5px;
+		color: $header-text;
+		font-weight: 500;
+		font-size: $font-size-header;
+		font-family: $title-font-family;
+		letter-spacing: -0.04em;
+		text-decoration: none;
+		transition:
+			background-color 0.3s ease,
+			color 0.3s ease;
+	}
+
+	&.mobile {
+		background-color: $primary-background;
+
+		ul {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 20px;
+			text-transform: uppercase;
+		}
+
+		li a,
+		li .menuButton {
+			font-weight: 300;
+			font-size: $font-size-header-menu-mobile;
+			cursor: pointer;
+		}
+	}
+
+	&.footer {
+		background-color: #191919;
+
+		ul {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		li a,
+		li .menuButton {
+			padding: 0;
+			color: $second-font-color;
+			cursor: pointer;
+		}
+	}
+
+	&.header {
+		padding-top: 5px;
+		padding-left: 40px;
+		background-color: transparent;
+
+		ul {
+			justify-content: center;
+			padding-right: 40px;
+
+			.separator {
+				margin: 0 10px;
+			}
+
+			li a:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}

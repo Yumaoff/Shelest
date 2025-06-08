@@ -6,19 +6,17 @@ $description-font-color: #4d4d4d; // Второй цвет шрифта для �
 $primary-background: #efefef; // Светлый фон страницы
 $secondary-background: #191919; // Тёмный фон страницы
 
-$accent-color: #bdc94d; // Акцентный цвет
-$accent-color-alt: #ca9dfc; // Альтернативный акцентный цвет
+$accent-color: #b2df22; // Акцентный цвет
+$accent-color-alt: #1e1b9c; // Альтернативный акцентный цвет
 
-$heading-gradient: linear-gradient(
-	180deg,
-	#056654 0%,
-	#000 100%
-); // Цвет основного заголовка
+// Шапка
+$header-text: #1e1b9c;
 
 //  Шрифты
 $font-family: 'Inter', sans-serif; // Основной шрифт
-$logo-font-family: 'Polonuim'; // Основной заголовок
-$title-font-family: 'Unbounded'; // Заголовок секции
+$logo-font-family: 'Polonium', sans-serif; // Основной заголовок
+$title-font-family: 'Unbounded', sans-serif; // Заголовок секции
+$logo-font-family-alt: 'Soyuz', sans-serif; // Альтернативный шрифт лого
 
 //  Размеры шрифтов
 $title-font-size-h1: clamp(71px, 20vw, 280px); // Основной заголовок

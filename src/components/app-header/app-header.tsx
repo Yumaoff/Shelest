@@ -1,6 +1,19 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { AppHeaderUI } from '@ui';
 
-export const AppHeader: FC = () => {
-	return <AppHeaderUI />;
+interface AppHeaderProps {
+	currentLanguage: string;
+	onLanguageChange: (newLocale: string) => void;
+}
+
+export const AppHeader: FC<AppHeaderProps> = ({}) => {
+	// Состояние для открытия/закрытия мобильного меню
+	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+	return (
+		<AppHeaderUI
+			isMenuOpen={isMenuOpen}
+			toggleMenu={() => setIsMenuOpen(!isMenuOpen)}
+		/>
+	);
 };
