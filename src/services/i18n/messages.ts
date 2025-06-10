@@ -2,15 +2,15 @@ import { LOCALES } from './locales';
 
 export const messages = {
 	[LOCALES.ENGLISH]: {
-		about: `About the company`,
-		how_it_work: `How it works`,
-		features: `Features`,
-		demo: `Assign a DEMO`,
+		about_me: `About me`,
+		montage_choose: `Choose a style`,
+		examples: `Examples`,
+		order: `Order edit`,
 	},
 	[LOCALES.RUSSIAN]: {
-		about: `О компании`,
-		how_it_work: `Как это работает`,
-		features: `Возможности`,
-		demo: `Назначить ДЕМО`,
+		about_me: `Обо мне`,
+		montage_choose: `Выберать стиль`,
+		examples: `Примеры работ`,
+		order: `Заказать монтаж`,
 	},
 };

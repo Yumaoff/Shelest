@@ -32,7 +32,7 @@ const MenuUI: React.FC<IMenuUIProps> = ({
 				{(variant === 'footer' || variant === 'mobile') && (
 					<li>
 						<a className={styles.menuButton} onClick={onDemoClick}>
-							<FormattedMessage id='demo' defaultMessage='Назначить ДЕМО' />
+							<FormattedMessage id='order' defaultMessage='ЗАКАЗАТЬ МОНТАЖ' />
 						</a>
 					</li>
 				)}
