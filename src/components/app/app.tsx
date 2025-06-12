@@ -3,8 +3,8 @@ import { LOCALES, messages } from '../../services/index';
 import { IntlProvider } from 'react-intl';
 import { useState } from 'react';
 import { AppHeader } from '@components';
-import { AppSectionUI } from '@ui';
 import { AppFooterUI } from '../ui/app-footer';
+import { AboutSection, ExampleSection } from '@components';
 
 function App() {
 	const getInitialLocale = () => {
@@ -24,21 +24,8 @@ function App() {
 				currentLanguage={currentLocale}
 				onLanguageChange={handleLocaleChange}
 			/>
-			<AppSectionUI title={'Елизавета SHELEST'} subTitle='ОБО МНЕ'>
-				<span>МОНТИРУЮ С ЛЮБОВЬЮ</span>
-				<p>
-					Всю жизнь занимаюсь творчеством, создаю монтаж, который помогает моим
-					клиентам увеличить прибыть и привлечь людей
-				</p>
-				<p>
-					Сильные стороны: - индивидуальный подход - работаю на качество - не
-					нарушаю дедлайны - знаю как выделить ваш ролик среди других
-				</p>
-				<div className='imgBack'>
-					{' '}
-					<img src='src\assets\person1.png' />{' '}
-				</div>
-			</AppSectionUI>
+			<AboutSection />
+			<ExampleSection />
 			<AppFooterUI></AppFooterUI>
 		</IntlProvider>
 	);
