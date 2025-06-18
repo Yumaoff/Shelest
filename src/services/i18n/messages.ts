@@ -9,7 +9,7 @@ export const messages = {
 	},
 	[LOCALES.RUSSIAN]: {
 		about_me: `Обо мне`,
-		montage_choose: `Выберать стиль`,
+		montage_choose: `Выбирать стиль`,
 		examples: `Примеры работ`,
 		order: `Заказать монтаж`,
 	},

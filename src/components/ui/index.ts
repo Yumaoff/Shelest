@@ -1,2 +1,2 @@
 export * from './app-header';
-export * from './app-section';
+export * from './example-section';

@@ -1,0 +1,145 @@
+@import '../../scss/variables';
+
+.background {
+	width: 100%;
+	height: auto;
+	min-height: 300px;
+	padding: 80px 20px;
+	background-color: $accent-color-alt;
+	border-radius: 20px;
+}
+
+.subtitleSection {
+	width: max-content;
+	height: min-content;
+	margin: 0;
+	padding: 10px 16px;
+	color: #055042;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 1;
+	letter-spacing: 0%;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: white;
+	border: 1px solid;
+	border-color: #055042;
+	border-radius: 30px;
+}
+
+.titleSection {
+	max-width: 715px;
+	margin: 0;
+	color: $primary-font-color;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 1;
+	letter-spacing: -6%;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 0 clamp(1.25rem, -0.42rem + 7.41vw, 6.25rem);
+	padding-top: 100px;
+	padding-bottom: clamp(3.75rem, 1.92rem + 8.15vw, 9.25rem);
+	background-color: #fff;
+}
+
+.titles {
+	display: grid;
+	grid-template-columns: minmax(117px, 1fr) 5fr;
+	gap: 96px;
+	margin-bottom: clamp(1.88rem, 2.08rem + -0.93vw, 1.25rem);
+	padding-bottom: 100px;
+	font-family: $title-font-family;
+}
+
+.content {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 0;
+	font-size: 20px;
+}
+
+.contentWraper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+.aboutText {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 200px;
+	max-width: 100%; // Ограничиваем ширину как у фона
+	margin: 0; // Центрируем
+	padding: 0; // Добавляем отступы от краев
+	color: $accent-color;
+	font-family: $title-font-family;
+
+	.textContainer {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		gap: 40px;
+		padding-left: 200px;
+	}
+
+	.leftText {
+		z-index: 1;
+		width: 1100px;
+		padding-top: 20px;
+		font-size: 30px;
+	}
+
+	img {
+		position: absolute;
+		right: 570px;
+		bottom: 147px;
+		grid-column: 2;
+		width: 550px;
+		max-width: 100%; // Ограничиваем ширину изображения
+		height: auto;
+	}
+}
+
+@media (width <= 768px) {
+	.section {
+		&::before {
+			top: 60px;
+			bottom: 60px;
+			border-radius: 20px;
+		}
+	}
+
+	.aboutText {
+		grid-template-columns: 1fr;
+		max-width: 90%; // Чуть шире на мобильных
+		padding: 0 15px;
+
+		img {
+			grid-column: 1;
+			width: 100%;
+			max-width: 300px;
+		}
+	}
+
+	.contentWraper {
+		flex-direction: column;
+	}
+
+	.titles {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+}

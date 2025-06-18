@@ -1,7 +1,7 @@
 @import '../../../scss/variables';
 
 .footer {
-	position: relative;
+	position: unset;
 	display: flex;
 	width: 100%;
 	min-width: $min-width;
