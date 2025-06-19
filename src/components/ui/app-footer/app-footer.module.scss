@@ -1,8 +1,9 @@
 @import '../../../scss/variables';
 
 .footer {
-	position: unset;
+	position: relative;
 	display: flex;
+	gap: 200px;
 	width: 100%;
 	min-width: $min-width;
 	height: 550px;
@@ -10,10 +11,48 @@
 	padding-top: 80px;
 	overflow: hidden;
 	color: #fff;
-	font-family: $font-family;
+	font-family: $title-font-family;
 	background-color: $accent-color-alt;
 
 	.menuContainer {
+		margin: 0;
+		padding: 0 150px;
+	}
+
+	.footerLogo {
+		position: absolute;
+		bottom: -35px;
+		left: -5px;
+		color: $accent-color;
+		font-size: 144px;
+		font-family: $logo-font-family;
+		text-shadow:
+			3px 3px 2px rgb(31 211 25 / 100%),
+			6px 6px 4px rgb(68 0 255 / 100%);
+	}
+
+	.contacts {
+		color: $accent-color;
+		text-decoration: none;
+		outline: none;
+		cursor: pointer;
+		user-select: none;
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	a {
+		color: inherit;
+	}
+
+	.contactList {
 		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		font-size: 30px;
+	}
+
+	.contact {
+		padding: 5px 0;
 	}
 }

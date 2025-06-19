@@ -51,13 +51,24 @@
 
 		ul {
 			flex-direction: column;
-			align-items: flex-start;
+			gap: 15px;
+			width: 100%;
+		}
+
+		li {
+			width: 100%;
+			margin: 0;
+			padding: 0;
 		}
 
 		li a,
 		li .menuButton {
-			padding: 0;
-			color: $second-font-color;
+			display: block;
+			width: 100%;
+			padding: 5px 0;
+			color: $accent-color;
+			font-size: 30px;
+			text-align: left;
 			cursor: pointer;
 		}
 	}

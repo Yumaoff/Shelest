@@ -18,13 +18,14 @@ export const AppFooterUI: React.FC<AppFooterUIProps> = ({ onDemoClick }) => {
 						<a href='https://t.me/shelestt_liss'>Telegram</a>
 					</li>
 					<li className={styles.contact}>
-						<a>VK</a>
+						<a href='https://t.me/shelestt_liss'>VK</a>
 					</li>
 					<li className={styles.contact}>
-						<a>Inst</a>
+						<a href='https://t.me/shelestt_liss'>Inst</a>
 					</li>
 				</ul>
 			</div>
+			<span className={styles.footerLogo}>SHELEST.PRO</span>
 		</footer>
 	);
 };

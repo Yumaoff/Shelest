@@ -36,11 +36,7 @@ export const AppHeaderUI: React.FC<AppHeaderUIProps> = ({
 				<div
 					className={`${styles.burger} ${isMenuOpen ? styles.open : ''}`}
 					onClick={toggleMenu}
-				>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+				></div>
 			</div>
 		</header>
 	);

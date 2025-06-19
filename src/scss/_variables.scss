@@ -34,3 +34,8 @@ $min-width: 360px; // Ширина страницы на мобильных ус
 
 // Размер фотки в секции обо мне
 $about-section-img-size: 550px;
+
+// Тени
+$shadow-small: 0 4px 8px rgba($accent-color-alt, 0.3);
+$shadow-medium: 0 8px 16px rgba($accent-color-alt, 0.2);
+$shadow-large: 0 15px 30px rgba($accent-color-alt, 0.15);
