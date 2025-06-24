@@ -4,7 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 100%; // Занимает всю высоту родителя (строки сетки)
+	height: 100%;
 	overflow: hidden;
 	background: #fff;
 	border-radius: 12px;
@@ -18,9 +18,9 @@
 
 	.cardImg {
 		position: unset;
-		flex-shrink: 0; // Не сжимается при нехватке места
+		flex-shrink: 0;
 		width: 100%;
-		height: 240px; // Фиксированная высота изображения
+		height: 240px;
 		object-fit: cover;
 	}
 

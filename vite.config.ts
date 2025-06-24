@@ -11,4 +11,7 @@ export default defineConfig({
 			'@ui': '/src/components/ui/',
 		},
 	},
+	server: {
+		host: '0.0.0.0',
+	},
 });

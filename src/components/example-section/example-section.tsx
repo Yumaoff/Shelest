@@ -8,6 +8,7 @@ const EXAMPLE_CARDS: IExample[] = [
 		title: 'Пример работы 1',
 		description: 'Креативный монтаж для бренда одежды',
 		image: 'src/assets/person1.png',
+		video: 'public/videos/1.mov',
 	},
 	{
 		id: 2,
