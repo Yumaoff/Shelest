@@ -4,7 +4,12 @@ import { IntlProvider } from 'react-intl';
 import { useState } from 'react';
 import { AppHeader } from '@components';
 import { AppFooterUI } from '../ui/app-footer';
-import { AboutSection, ExampleSection, ClientsSection } from '@components';
+import {
+	AboutSection,
+	ExampleSection,
+	ClientsSection,
+	ReelsSection,
+} from '@components';
 
 function App() {
 	const getInitialLocale = () => {
@@ -27,6 +32,7 @@ function App() {
 			<AboutSection />
 			<ExampleSection />
 			<ClientsSection />
+			<ReelsSection />
 			<AppFooterUI></AppFooterUI>
 		</IntlProvider>
 	);

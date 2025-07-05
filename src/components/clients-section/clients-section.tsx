@@ -1,12 +1,12 @@
 import { ClientsSectionUI } from '@ui';
 
 const CAROUSEL_IMAGES = [
-	'./src/assets/images/1.jpg',
-	'./src/assets/images/2.jpg',
-	'./src/assets/images/3.jpg',
-	'./src/assets/images/4.jpg',
-	'./src/assets/images/5.jpg',
-	'./src/assets/images/1.jpg',
+	'./src/assets/clients/1.jpg',
+	'./src/assets/clients/2.jpg',
+	'./src/assets/clients/3.jpg',
+	'./src/assets/clients/4.jpg',
+	'./src/assets/clients/5.jpg',
+	'./src/assets/clients/1.jpg',
 ];
 
 export const ClientsSection = () => {

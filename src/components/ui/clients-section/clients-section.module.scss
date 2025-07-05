@@ -99,24 +99,36 @@
 }
 
 .arrowButton {
+	z-index: 2;
 	padding: 0 20px;
 	color: $accent-color-alt;
 	font-size: 2rem;
 	background: none;
 	border: none;
 	cursor: pointer;
-	transition: color 0.3s ease;
+	transition: all 0.3s ease;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
 }
 
 .arrowLeft,
 .arrowRight {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
-	line-height: 1.3;
+	width: 50px;
+	height: 50px;
+	color: $accent-color-alt;
+	font-weight: bold;
+	line-height: 1.6;
 	text-align: center;
 	background-color: $accent-color;
 	border-radius: 50%;
+	box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
 }
 
 @media (width <= 768px) {
