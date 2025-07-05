@@ -27,3 +27,6 @@ dist-ssr
 
 # Videos
 /public/videos/*
+
+# Images
+/src/assets/images/*
