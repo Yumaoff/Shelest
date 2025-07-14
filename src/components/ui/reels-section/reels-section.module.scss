@@ -39,7 +39,7 @@
 	font-weight: 300;
 	font-size: 22px;
 	line-height: 1;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	text-transform: uppercase;
 	background-color: white;
@@ -55,7 +55,7 @@
 	font-weight: 300;
 	font-size: 50px;
 	line-height: 1;
-	letter-spacing: -6%;
+	letter-spacing: -0.06em;
 	text-align: left;
 	text-transform: uppercase;
 }
@@ -180,6 +180,42 @@
 	font-size: 18px;
 }
 
+.orderButtonContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	padding: 0 20px;
+	padding-top: 50px;
+}
+
+.orderButton {
+	display: inline-block;
+	padding: 15px 30px;
+	color: $accent-color;
+	font-weight: 600;
+	font-size: 40px;
+	font-family: $title-font-family;
+	text-decoration: none;
+	background-color: $accent-color-alt;
+	border: none;
+	border-radius: 30px;
+	box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&:hover {
+		color: $accent-color-alt;
+		background-color: $accent-color;
+		transform: scale(1.1);
+	}
+
+	&:active {
+		color: $accent-color-alt;
+		background-color: $accent-color;
+		transform: scale(0.95);
+	}
+}
+
 @media (width <= 1024px) {
 	.titles {
 		gap: 100px;
@@ -224,6 +260,11 @@
 		height: 40px;
 		line-height: 1.2;
 	}
+
+	.orderButton {
+		padding: 12px 25px;
+		font-size: 16px;
+	}
 }
 
 @media (width <= 480px) {
@@ -238,5 +279,10 @@
 
 	.subtitleSection {
 		font-size: 18px;
+	}
+
+	.orderButton {
+		padding: 10px 20px;
+		font-size: 14px;
 	}
 }

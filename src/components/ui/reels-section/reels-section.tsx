@@ -73,6 +73,16 @@ export const ReelsSectionUI: React.FC<IReelsSectionUIProps> = ({
 					</div>
 				</div>
 			</div>
+			<div className={styles.orderButtonContainer}>
+				<a
+					href='https://t.me/shelestt_liss'
+					target='_blank'
+					rel='noopener noreferrer'
+					className={styles.orderButton}
+				>
+					Заказать монтаж
+				</a>
+			</div>
 		</section>
 	);
 };
